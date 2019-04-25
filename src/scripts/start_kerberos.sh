@@ -1,1 +1,0 @@
-sudo -Eu airflow bash -c 'exec airflow kerberos'

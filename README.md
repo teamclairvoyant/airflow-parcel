@@ -61,10 +61,7 @@ There are seven roles defined in the CSD.
 1. Airflow Webserver
 2. Airflow Scheduler
 3. Airflow Worker
-4. RabbitMQ
-5. Airflow Flower
-6. Kerberos
-7. Gateway
+4. Airflow Flower
 
 Airflow Webserver: Airflow Webserver role is used to start the Airflow Web UI. Webserver role can be deployed on more than instances. However, they will be the same and can be used for backup purposes.
 
@@ -72,13 +69,7 @@ Airflow Scheduler: Airflow Scheduler role is used to schedule the Airflow jobs. 
 
 Airflow Worker: Airflow Worker role picks jobs from RabbitMQ and executed them on the nodes. Multiple instances can be deployed.
 
-RabbitMQ: RabbitMQ role facilitates the use of RabbitMQ as the messaging broker. Currently the number of roles is limited to 1.
-
 Airflow Flower: Airflow Flower is used to monitor  celery clusters. Multiple instances are supported
-
-Kerberos: Kerberos is used to enable Kerberos protocol for the Airflow. It internally executes `airflow kerberos`. An external Kerberos Distribution Center must be setup. Multiple instances can be setup for load balancing purposes.
-
-Gateway: The purpose of the gateway role is to write the configurations from the configurations tab into the airflow.cfg file. This is done through the update_cfg.sh file which is executed from the scriptRunner within the gateway role.
 
 ## Using the Airflow binary:
 Here are some of the examples of Airflow commands:

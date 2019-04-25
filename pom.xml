@@ -5,7 +5,7 @@
 
   <groupId>com.clairvoyant.csd</groupId>
   <artifactId>AIRFLOW</artifactId>
-  <version>1.0.0</version>
+  <version>5.16.1</version>
   <name>Airflow CSD</name>
   <packaging>pom</packaging>
 
