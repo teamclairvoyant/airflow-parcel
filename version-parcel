@@ -1,6 +1,0 @@
-#!/bin/bash
-# Prints out the parcel version in order to build the URL that is referenced
-# inside Cloudera Manager.  This is only here due to Amazon S3 HTTP redirect
-# issues.  Once those are solved, the service.sdl should be hardcoded to use
-# "latest" instead of a version string.
-printf 1.10.3

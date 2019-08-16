@@ -1,2 +1,6 @@
+# Maven
 target/
-*.swp
+
+# JetBrains
+.idea
+*.iml
